@@ -1,0 +1,171 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Insurance Company Form</title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                width: 80%;
+                border-radius: 25px;
+                margin: 10px;
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+            }
+
+            .form-panel {
+                max-width: 500px;
+                width: 90%;
+                margin-top: 50px;
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            h2 {
+                text-align: center;
+                color: #333;
+                font-size: 24px;
+                margin: 20px;
+
+            }
+
+            label {
+                color: #333;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            input[type="date"] {
+                width: 100%;
+                height: 32px;
+                padding: 5px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            input[type="checkbox"] {
+                margin-top: 5px;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+                height: 40px;
+                margin-top: 20px;
+                background-color: #333;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #555;
+            }
+
+            input[type="submit"]:focus {
+                outline: none;
+            }
+        </style>
+    </head>
+
+
+    <body> 
+        <div class="container">
+            <h2>Insurance Company Form</h2>
+        </div>
+        <div class="form-panel">    
+        <form action="/submit_form" method="post"> 
+            <label for="fname">First Name:</label><br> 
+            <input type="text" id="fname" name="fname"><br>
+            
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            
+            <label for="pnum">Phone Number:</label><br>
+            <input type="tel" id="pnum" name="pnum"><br>
+            
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+            
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city"><br>
+            
+            <label for="state">State:</label><br>
+            <input type="text" id="state" name="state"><br>
+            
+            <label for="zip">Zip Code:</label><br>
+            <input type="text" id="zip" name="zip"><br>
+            
+            <label for="birthday">Date of Birth:</label><br>
+            <input type="date" id="birthday" name="birthday"><br>
+            
+            <label for="occupation">Occupation:</label><br>
+            <input type="text" id="occupation" name="occupation"><br>
+            
+            <label for="insured">Insured Party:</label><br>
+            <input type="text" id="insured" name="insured"><br>
+            
+            <label for="relationship">Relationship to Insured:</label><br>
+            <input type="text" id="relationship" name="relationship"><br>
+            
+            <label for="driverlicense">Driver's License Number:</label><br>
+            <input type="text" id="driverlicense" name="driverlicense"><br>
+            
+            <label for="vehiclemake">Vehicle Make:</label><br>
+            <input type="text" id="vehiclemake" name="vehiclemake"><br>
+            
+            <label for="vehiclemodel">Vehicle Model:</label><br>
+            <input type="text" id="vehiclemodel" name="vehiclemodel"><br>
+            
+            <label for="vehicleyear">Vehicle Year:</label><br>
+            <input type="text" id="vehicleyear" name="vehicleyear"><br>
+            
+            <label for="vehiclevin">Vehicle VIN:</label><br>
+            <input type="text" id="vehiclevin" name="vehiclevin"><br>
+            
+            <label for="vehiclelicense">Vehicle License Plate Number:</label><br>
+            <input type="text" id="vehiclelicense" name="vehiclelicense"><br>
+            
+            <label for="vehiclecolor">Vehicle Color:</label><br>
+            <input type="text" id="vehiclecolor" name="vehiclecolor"><br>
+            <br>
+            <label for="healthissues">Do you have any health issues that should be disclosed?:</label>
+            <input type="checkbox" id="healthissues" name="healthissues"><br>
+            <br>
+            <label for="crime">Have you ever been convicted of a crime?:</label>
+            <input type="checkbox" id="crime" name="crime"><br>
+            <br>
+            <label for="ticket">Have you ever received a traffic ticket?:</label>
+            <input type="checkbox" id="ticket" name="ticket"><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    </body> 
+    </html>
+
+
+
+
+
+
